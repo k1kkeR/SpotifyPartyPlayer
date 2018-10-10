@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+    <TextView
+        android:id="@+id/createHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/page2_header"
+        android:textSize="34sp"
+        android:textColor="@color/textLight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+    <LinearLayout
+        android:id="@+id/inputBoxes"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createHeader"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/sessionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/page2_input1_sessionName"
+                android:textColorHint="@color/textLight"
+                android:inputType="text"
+                android:textColor="@color/textLight" />
+            <EditText
+                android:id="@+id/genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/textLight"
+                android:hint="@string/page2_input2_preferredGenre"
+                android:textColorHint="@color/textLight" />
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/textLight"
+                android:hint="@string/page2_input3_entryPassword"
+                android:textColorHint="@color/textLight" />
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/textLight"
+                android:hint="@string/page2_input4_addQueuePassword"
+                android:textColorHint="@color/textLight" />
+            <EditText
+                android:id="@+id/password3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:textColor="@color/textLight"
+                android:textColorHint="@color/textLight"
+                android:hint="@string/page2_input5_fullRightsPassword" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="@string/page2_button1_randomize"
+        android:layout_below="@id/inputBoxes"
+        android:layout_alignStart="@id/inputBoxes"
+        android:layout_marginTop="60dp"
+        android:onClick="randomizeInput"/>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="@string/page2_button2_startSession"
+        android:layout_alignEnd="@id/inputBoxes"
+        android:layout_below="@id/inputBoxes"
+        android:layout_marginTop="60dp"
+        android:onClick="createSession" />
+</RelativeLayout>

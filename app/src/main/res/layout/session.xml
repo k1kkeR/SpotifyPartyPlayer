@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    >
+    <TextView
+        android:id="@+id/partyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:textColor="@color/textLight"
+        android:background="@color/backgroundText"
+        android:text="@string/page4_defaultPartyName" />
+    <TextView
+        android:id="@+id/partyGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@id/partyName"
+        android:padding="5dp"
+        android:textColor="@color/textLight"
+        android:background="@color/backgroundText"
+        android:text="@string/page4_defaultUserName" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@id/partyGenre"
+        android:padding="5dp"
+        android:textColor="@color/textLight"
+        android:background="@color/backgroundText"
+        android:text="@string/page4_defaultGenre" />
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:textColor="@color/textLight"
+        android:background="@color/backgroundText"
+        android:text="@string/page4_defaultSong" />
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/songTitle"
+        android:background="@color/backgroundText"
+        android:textColor="@color/textLight"
+        android:layout_below="@id/songTitle"
+        android:padding="3dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="3dp"
+        android:text="@string/page4_defaultArtist"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/artist"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/textLight">
+        <ListView
+            android:id="@+id/queueList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/songTitle"
+        android:layout_below="@+id/songTitle"
+        android:layout_marginTop="25dp"
+        android:text="@string/page4_addSong"
+        android:background="@drawable/theroundbutton"
+        android:onClick="queueSong"
+        />
+    <Button
+        android:id="@+id/newSong"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/songTitle"
+        android:layout_below="@+id/songTitle"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/page4_nextSong"
+        android:background="@drawable/theroundbutton"
+        android:onClick="nextSong"
+        />
+    <Button
+        android:id="@+id/pauseResume"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/songTitle"
+        android:layout_below="@+id/songTitle"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/page4_pauseResume"
+        android:background="@drawable/theroundbutton"
+        android:onClick="pauseResume"
+        />
+
+</RelativeLayout>

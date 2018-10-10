@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SpotifyPartyPlayer</string>
+    <string name="back_arrow">&lt;-</string>
+    <!---Start page strings -->
+    <string name="page1_header">Spotify partyplay</string>
+    <string name="page1_button1">Connect to session</string>
+    <string name="page1_button2">Start session</string>
+    <!---Create session page strings -->
+    <string name="page2_header">Create new session</string>
+    <string name="page2_input1_sessionName">Session name…</string>
+    <string name="page2_input2_preferredGenre">Preferred genre…</string>
+    <string name="page2_input3_entryPassword">Password to enter the session…</string>
+    <string name="page2_input4_addQueuePassword">Password for queueing rights…</string>
+    <string name="page2_input5_fullRightsPassword">Password for all rights…</string>
+    <string name="page2_button1_randomize">Randomize</string>
+    <string name="page2_button2_startSession">Start new session</string>
+    <!---Available sessions page strings -->
+    <string name="page3_header">Available sessions</string>
+    <!---Session page strings -->
+    <string name="page4_defaultSong">Song title</string>
+    <string name="page4_defaultArtist">Artist</string>
+    <string name="page4_defaultPartyName">Party name</string>
+    <string name="page4_defaultUserName">Username</string>
+    <string name="page4_defaultGenre">Genre</string>
+    <string name="page4_addSong">Add</string>
+    <string name="page4_nextSong">Next</string>
+    <string name="page4_pauseResume">Pause</string>
+    <string name="page4_Resume">Resume</string>
+
+    <!--Randomize strings -->
+</resources>
