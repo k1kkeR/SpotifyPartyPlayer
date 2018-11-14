@@ -1,4 +1,6 @@
 # SpotifyPartyPlayer
+This app was my exam assignment for Android programming and the first Android app i developed. You can see my exam report in the master branch.
+
 An Android app i started on to make it easier to queue songs on the playing device from your own device. Uses Spotify SDK and NSD 
 
 In the app/src/main/.../spotifypartyplay you can see my java files. 
